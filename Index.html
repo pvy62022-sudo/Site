@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Tập Gym 30 Ngày - Chi Tiết</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .check-box { width: 20px; height: 20px; cursor: pointer; }
+        .bg-gym-blue { background-color: #1e40af; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <div class="max-w-4xl mx-auto p-4 pb-20">
+        <header class="text-center mb-6 bg-gym-blue text-white p-6 rounded-xl shadow-lg">
+            <h1 class="text-2xl font-bold">LỘ TRÌNH GYM 30 NGÀY</h1>
+            <p class="text-sm opacity-90">18/03/2026 - 17/04/2026 | Nam 54kg - 1m65</p>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <div class="flex border-b border-gray-200 mb-6 sticky top-0 bg-gray-50 z-10">
+            <button onclick="openTab('tap-chinh')" class="tab-btn flex-1 py-3 text-sm font-semibold border-b-2 border-blue-600 text-blue-600" id="defaultOpen">TẬP CHÍNH (3-5-7)</button>
+            <button onclick="openTab('cardio')" class="tab-btn flex-1 py-3 text-sm font-semibold border-b-2 border-transparent text-gray-500">CARDIO (2-4-6)</button>
+            <button onclick="openTab('dinh-duong')" class="tab-btn flex-1 py-3 text-sm font-semibold border-b-2 border-transparent text-gray-500">ĂN UỐNG</button>
+        </div>
+
+        <!-- Tab 1: Tập Chính 2 Tiếng -->
+        <div id="tap-chinh" class="tab-content active">
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <div class="p-4 bg-blue-50 border-b border-blue-100">
+                    <h2 class="font-bold text-blue-800">THỨ 3 - 5 - 7: FULL BODY (120 PHÚT)</h2>
+                    <p class="text-xs text-blue-600 italic">Khởi động 10p Chạy bộ (Mức 4-6) trước khi tập</p>
+                </div>
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-gray-100 uppercase text-xs">
+                        <tr>
+                            <th class="p-3">Bài tập / Máy</th>
+                            <th class="p-3 text-center">Hiệp x Lần</th>
+                            <th class="p-3 text-center">Nghỉ</th>
+                            <th class="p-3 text-center">Xong</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr>
+                            <td class="p-3"><b>1. Squat (Máy Smith)</b><br><span class="text-xs text-gray-500">Đùi, mông - Lưng thẳng</span></td>
+                            <td class="p-3 text-center">4 x 12</td>
+                            <td class="p-3 text-center text-red-500 font-bold">90s</td>
+                            <td class="p-3 text-center"><input type="checkbox" class="check-box"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3"><b>2. Chest Press (Đẩy ngực)</b><br><span class="text-xs text-gray-500">Ngực - Ép vai sát ghế</span></td>
+                            <td class="p-3 text-center">4 x 12</td>
+                            <td class="p-3 text-center text-red-500 font-bold">60s</td>
+                            <td class="p-3 text-center"><input type="checkbox" class="check-box"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3"><b>3. Lat Pulldown (Kéo xô)</b><br><span class="text-xs text-gray-500">Lưng - Kéo xuống ngực</span></td>
+                            <td class="p-3 text-center">4 x 12</td>
+                            <td class="p-3 text-center text-red-500 font-bold">60s</td>
+                            <td class="p-3 text-center"><input type="checkbox" class="check-box"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3"><b>4. Shoulder Press (Đẩy vai)</b><br><span class="text-xs text-gray-500">Vai - Đẩy thẳng lên</span></td>
+                            <td class="p-3 text-center">4 x 10</td>
+                            <td class="p-3 text-center text-red-500 font-bold">60s</td>
+                            <td class="p-3 text-center"><input type="checkbox" class="check-box"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3"><b>5. Leg Press (Đạp đùi)</b><br><span class="text-xs text-gray-500">Chân - Không khóa khớp gối</span></td>
+                            <td class="p-3 text-center">3 x 12</td>
+                            <td class="p-3 text-center text-red-500 font-bold">60s</td>
+                            <td class="p-3 text-center"><input type="checkbox" class="check-box"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3"><b>6. Bicep Curls (Tay trước)</b><br><span class="text-xs text-gray-500">Tạ đơn - Giữ khuỷu tay sát sườn</span></td>
+                            <td class="p-3 text-center">3 x 12</td>
+                            <td class="p-3 text-center text-red-500 font-bold">60s</td>
+                            <td class="p-3 text-center"><input type="checkbox" class="check-box"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3"><b>7. Tricep Pushdown (Tay sau)</b><br><span class="text-xs text-gray-500">Cáp - Ép sát nách</span></td>
+                            <td class="p-3 text-center">3 x 12</td>
+                            <td class="p-3 text-center text-red-500 font-bold">60s</td>
+                            <td class="p-3 text-center"><input type="checkbox" class="check-box"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3"><b>8. Plank (Gồng bụng)</b><br><span class="text-xs text-gray-500">Bụng - Người thẳng ván</span></td>
+                            <td class="p-3 text-center">3 x 60s</td>
+                            <td class="p-3 text-center text-red-500 font-bold">60s</td>
+                            <td class="p-3 text-center"><input type="checkbox" class="check-box"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="p-4 bg-yellow-50 text-xs italic text-yellow-800">
+                    * Lưu ý: Tập xong bắt buộc Giãn cơ 5p + Máy rung bụng 5-10p.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 2: Cardio & Phục hồi -->
+        <div id="cardio" class="tab-content">
+            <div class="bg-white rounded-lg shadow p-4">
+                <h2 class="font-bold text-green-800 mb-4 border-b pb-2">THỨ 2 - 4 - 6: CARDIO & GIÃN CƠ (60 PHÚT)</h2>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start">
+                        <div class="bg-green-100 p-2 rounded mr-3">🏃</div>
+                        <div>
+                            <p class="font-semibold">Đi bộ nhanh / Chạy bộ (30-40 Phút)</p>
+                            <p class="text-gray-500">Duy trì tốc độ máy mức 5 - 6. Không nên chạy quá nhanh.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-green-100 p-2 rounded mr-3">🔄</div>
+                        <div>
+                            <p class="font-semibold">Xoay eo (Đĩa xoay)</p>
+                            <p class="text-gray-500">3 hiệp, mỗi hiệp xoay liên tục 3 phút.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-green-100 p-2 rounded mr-3">🧘</div>
+                        <div>
+                            <p class="font-semibold">Giãn cơ toàn thân (10 Phút)</p>
+                            <p class="text-gray-500 italic">Thực hiện thật kỹ các động tác giãn ngực, đùi và lưng.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-green-100 p-2 rounded mr-3">🌪️</div>
+                        <div>
+                            <p class="font-semibold">Máy rung bụng (10 Phút)</p>
+                            <p class="text-gray-500">Massage thư giãn các vùng cơ bị mỏi.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab 3: Dinh Dưỡng -->
+        <div id="dinh-duong" class="tab-content">
+            <div class="bg-white rounded-lg shadow p-4">
+                <h2 class="font-bold text-orange-800 mb-4 border-b pb-2">CHẾ ĐỘ ĂN TĂNG CƠ (CHO NGƯỜI 54KG)</h2>
+                <div class="space-y-4">
+                    <div class="p-3 bg-orange-50 rounded-lg border border-orange-100">
+                        <p class="font-bold text-orange-700">☀️ BỮA SÁNG (7h00 - 8h00)</p>
+                        <p class="text-sm">Bún/Phở/Cơm tấm + 1 ly sữa tươi.</p>
+                    </div>
+                    <div class="p-3 bg-orange-50 rounded-lg border border-orange-100">
+                        <p class="font-bold text-orange-700">🍱 BỮA TRƯA (11h30 - 12h30)</p>
+                        <p class="text-sm">Ít nhất 2 bát cơm + 150g Đạm (Thịt bò/Heo/Cá) + Rau.</p>
+                    </div>
+                    <div class="p-3 bg-blue-50 rounded-lg border border-blue-100">
+                        <p class="font-bold text-blue-700">🍌 BỮA PHỤ TRƯỚC TẬP (45 Phút)</p>
+                        <p class="text-sm">1 quả chuối + 1 hộp sữa hộp hoặc bánh mì ngọt.</p>
+                    </div>
+                    <div class="p-3 bg-red-50 rounded-lg border border-red-100">
+                        <p class="font-bold text-red-700">🍗 BỮA TỐI SAU TẬP (Cực kỳ quan trọng)</p>
+                        <p class="text-sm">Ăn ngay trong vòng 60p sau tập. 2 bát cơm + 200g Ức gà/Cá + 2 quả trứng.</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded text-xs leading-relaxed">
+                        <b>LƯU Ý:</b><br>
+                        - Uống đủ 2-3 lít nước mỗi ngày.<br>
+                        - Nguyên tắc hít thở: <b>NẶNG THỞ RA (Mồm) - NHẸ HÍT VÀO (Mũi)</b>.<br>
+                        - Ngủ trước 23h00 để cơ bắp phục hồi.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("border-blue-600", "text-blue-600");
+                tablinks[i].classList.add("border-transparent", "text-gray-500");
+            }
+            document.getElementById(tabName).classList.add("active");
+            event.currentTarget.classList.add("border-blue-600", "text-blue-600");
+            event.currentTarget.classList.remove("border-transparent", "text-gray-500");
+        }
+    </script>
+</body>
+</html>
